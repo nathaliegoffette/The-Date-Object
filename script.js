@@ -41,9 +41,9 @@ function myTimer() {
   document.getElementById("date").innerHTML = date;
   document.getElementById("month").innerHTML = monthName;
   document.getElementById("year").innerHTML = year;
-  document.getElementById("hour").innerHTML = hour;
-  document.getElementById("minute").innerHTML = minute;
-  document.getElementById("second").innerHTML = second;
+  document.getElementById("hour").innerHTML = hour + " : " + minute + " : " + second;
+/*  document.getElementById("minute").innerHTML = minute + " : ";
+  document.getElementById("second").innerHTML = second;*/
 
 
 

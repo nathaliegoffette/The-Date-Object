@@ -1,11 +1,36 @@
-body{
+@mixin redBGC{
+    background-color: rgb(121, 21, 21);
+    color : white;
+}
+
+
+body {
     display:flex;
     align-items: center;
-    background-color: rgb(152, 214, 81);
+    background-color: rgb(164, 204, 236);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #theDay {
-    align-items: center;
+    text-align: center;
     color:red;
+    margin : 5rem;
+    /*padding : 2rem;*/
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+        #day{
+            margin: 0;
+            @include redBGC
+        }
+
+        #year{
+            @include redBGC;
+        }
+
+}
+
+#theTime {
+    font-size: 2rem;
 }
 
